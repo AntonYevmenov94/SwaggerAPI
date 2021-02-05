@@ -9,7 +9,7 @@ namespace SwaggerExample
     public class WeatherForecast
     {
         public City city { get; set; }
-        public IList<WeatherTotal> List { get; set; }
+        public IList<ListWeather> List { get; set; }
 
         public override string ToString()
         {
@@ -32,6 +32,13 @@ namespace SwaggerExample
     {
         public string Name { get; set; }
         public string Country { get; set; }
+    }
 
+    public class ListWeather
+    {
+        public Main main { get; set; }
+        public Wind wind { get; set; }
+        public Clouds clouds { get; set; }
+        public string Dt_txt { get; set; }
     }
 }

@@ -44,7 +44,7 @@ namespace SwaggerExample
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My First test API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "V1");
                 c.RoutePrefix = string.Empty;
             }); 
             if (env.IsDevelopment())
